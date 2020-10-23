@@ -1,3 +1,7 @@
+/*
+The code below act as database access layer for employee based ops.
+*/
+
 var mongoose = require('mongoose');
 var employeeSchema = require('../model/employee');
 

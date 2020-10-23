@@ -1,3 +1,6 @@
+/*
+The code defines the schema for employee object.
+*/
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var employeeSchema = new Schema({

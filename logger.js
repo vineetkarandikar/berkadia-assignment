@@ -1,3 +1,6 @@
+/*
+Logger uitlity.
+*/
 const winston = require('winston');
 const log = winston.createLogger({
     transports: [

@@ -1,7 +1,11 @@
+/*
+The code below act as service layer for employee based ops.
+*/
 var Employee = require('../doa/employee');
 var log = require('../logger');
 var datetime = new Date();
 
+//create employee
 exports.createEmployee = async function (req, res, next) {
     var employee = {
         name: req.body.name,
@@ -19,6 +23,7 @@ exports.createEmployee = async function (req, res, next) {
     }
 }
 
+//get all the employees' details present
 exports.getEmployees = async function (req, res, next) {
     let result = await Employee.get({});
     if (result) {
@@ -30,8 +35,9 @@ exports.getEmployees = async function (req, res, next) {
     }
 }
 
+//get employees details based on employee name.
 exports.getEmployee = async function (req, res, next) {
-    let result = await Employee.getByName({ name: req.params.name});
+    let result = await Employee.getByName({ name: req.params.name });
     log.info(req.params.name);
     if (result) {
         log.info(datetime + " === " + result);
@@ -41,6 +47,8 @@ exports.getEmployee = async function (req, res, next) {
         res.json({ error: result });
     }
 }
+
+//update employee detail
 exports.updateEmployee = async function (req, res, next) {
     var employee = {
         name: req.body.name,
@@ -60,6 +68,7 @@ exports.updateEmployee = async function (req, res, next) {
     }
 }
 
+//remove employee
 exports.removeEmployee = async function (req, res, next) {
     let result = await Employee.delete({ _id: req.params.id });
     log.info("Employee deletion started !");

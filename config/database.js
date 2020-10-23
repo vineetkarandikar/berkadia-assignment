@@ -1,3 +1,6 @@
+/*
+The code below is for database connectivity.
+*/
 var mongoose = require('mongoose');
 var log = require('../logger');
 
