@@ -1,0 +1,8 @@
+version: "2"
+services:
+  berkadia-app:
+    build:
+      context: "."
+    image: vineetkarandikar/berkadia-app:latest
+    ports:
+      - "3010:3333"

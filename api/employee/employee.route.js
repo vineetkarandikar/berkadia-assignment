@@ -1,3 +1,6 @@
+/*
+The code below will change act as router for employee service
+*/
 var Employee = require('../../controller/employee');
 const Joi = require('joi')
 const validator = require('express-joi-validation').createValidator({});
