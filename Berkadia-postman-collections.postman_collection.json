@@ -1,0 +1,206 @@
+{
+	"variables": [],
+	"info": {
+		"name": "berkadia-assignment-app",
+		"_postman_id": "b1505d94-5659-f80e-0339-f00329814756",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3010/api/v1/get",
+			"request": {
+				"url": "http://localhost:3010/api/v1/get",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "rahul",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "12345679178",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "department",
+							"value": "history",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3010/api/v1/get/vineet karandikar",
+			"request": {
+				"url": "http://localhost:3010/api/v1/get/vineet karandikar",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "rahul",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "12345679178",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "department",
+							"value": "history",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3010/api/v1/create",
+			"request": {
+				"url": "http://localhost:3010/api/v1/create",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "rahul",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "12345679178",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "department",
+							"value": "history",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3010/api/v1/update/5f901926c0c0c71308e26c33",
+			"request": {
+				"url": "http://localhost:3010/api/v1/update/5f901926c0c0c71308e26c33",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "rahul",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "888888",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "department",
+							"value": "history",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3010/api/v1/remove/5f901926c0c0c71308e26c33",
+			"request": {
+				"url": "http://localhost:3010/api/v1/remove/5f901926c0c0c71308e26c33",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "rahul",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "888888",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "department",
+							"value": "history",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
